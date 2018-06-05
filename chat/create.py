@@ -10,7 +10,7 @@ def create_app(debug=False):
     app.debug = debug
     app.config['SECRET_KEY'] = 'gjr39dkjn344_!67#'
 
-    from .main import main as main_blueprint
+    from chat.main.blueprint import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
     socketio.init_app(app)
