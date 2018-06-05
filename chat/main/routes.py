@@ -1,5 +1,5 @@
 from flask import session, redirect, url_for, render_template, request
-from chat.main import main
+from chat.main.blueprint import main
 from chat.main.forms import LoginForm
 
 
