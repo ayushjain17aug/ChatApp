@@ -19,7 +19,7 @@ class LoginForm(Form):
     from flask import session, redirect, url_for, render_template, request
 
   
-@main.route('/', methods=['GET', 'POST'])
+route('/', methods=['GET', 'POST'])
 def index():
     """Login form to enter a room."""
     form = LoginForm()
@@ -33,7 +33,7 @@ def index():
     return render_template('index.html', form=form)
 
 
-@main.route('/chat')
+route('/chat')
 def chat():
     """Chat room. The user's name and room must be stored in
     the session."""
