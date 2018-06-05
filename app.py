@@ -1,5 +1,5 @@
 import sys
-from chat import  socketio,create_app
+from .chat import  socketio,create_app
 
 app = create_app(debug=True)
 
