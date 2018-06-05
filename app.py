@@ -12,6 +12,7 @@ def create_app(debug=False):
     app = Flask(__name__)
     app.debug = debug
     app.config['SECRET_KEY'] = 'gjr39dkjn344_!67#'
+    from chat.main.blueprint import main as main_blueprint
     main_blueprint = Blueprint('main', __name__)
     app.register_blueprint(main_blueprint)
 
