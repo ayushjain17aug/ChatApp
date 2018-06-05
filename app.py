@@ -1,6 +1,6 @@
 #!/bin/env python
 import sys
-from app import create_app, socketio
+from chat import create_app, socketio
 
 app = create_app(debug=True)
 
